@@ -12,7 +12,7 @@ pub struct KGStack<T> {
     list: Vec<T>,
 }
 
-trait StackStuff<T> {
+pub trait StackStuff<T> {
     fn push(&mut self, x: T);
     fn pop(&mut self) -> Result<T,i8>;
     fn size(&self) -> usize;
